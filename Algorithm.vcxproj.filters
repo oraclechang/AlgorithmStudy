@@ -26,10 +26,10 @@
     <ClCompile Include="QuickSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HeapSort.cpp">
+    <ClCompile Include="StringPermutation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StringPermutation.cpp">
+    <ClCompile Include="FindFirstNoDupChar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
