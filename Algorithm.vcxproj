@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_REVERSEWORDS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CONVERTINTTOSTRING</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,6 +82,7 @@
     <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConvertIntToString.cpp" />
     <ClCompile Include="FindFirstNoDupChar.cpp" />
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="QuickSort.cpp" />
