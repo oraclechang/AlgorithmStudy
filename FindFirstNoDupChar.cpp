@@ -6,7 +6,6 @@ void FindFirstNoDupChar(string str)
 {	
 	int nSize = str.size();
 
-	// Hash 테이블 만듬
 	map< char, int > Hash;
 	for (int i = 0; i < nSize; ++i)
 	{
@@ -16,7 +15,6 @@ void FindFirstNoDupChar(string str)
 	}
 		
 
-	// 중복 점검
 	for (int i = 0; i < nSize; ++i)
 	{
 		if (1 == Hash[str[i]])
