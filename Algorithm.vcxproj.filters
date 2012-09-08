@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Cracking">
       <UniqueIdentifier>{d805b3e1-4aac-4d76-aee8-9ab141a733af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Exposed">
+      <UniqueIdentifier>{01a83fad-9d93-4c17-bb39-94317cf93911}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -57,23 +60,29 @@
     <ClCompile Include="BSTree.cpp">
       <Filter>Source Files\Tree</Filter>
     </ClCompile>
-    <ClCompile Include="4.1.cpp">
-      <Filter>Source Files\Cracking</Filter>
-    </ClCompile>
     <ClCompile Include="TreeTest.cpp">
       <Filter>Source Files\Tree</Filter>
     </ClCompile>
-    <ClCompile Include="StringCombine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TelephoneWords_Recursive.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="4.1.cpp">
+      <Filter>Source Files\Cracking</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList_Stack.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Exposed</Filter>
     </ClCompile>
     <ClCompile Include="ReverseWord.cpp">
+      <Filter>Source Files\Exposed</Filter>
+    </ClCompile>
+    <ClCompile Include="StringCombine.cpp">
+      <Filter>Source Files\Exposed</Filter>
+    </ClCompile>
+    <ClCompile Include="TelephoneWords_Recursive.cpp">
+      <Filter>Source Files\Exposed</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2.cpp">
+      <Filter>Source Files\Cracking</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

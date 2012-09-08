@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="4.1.cpp" />
+    <ClCompile Include="4.2.cpp" />
     <ClCompile Include="ConvertIntToString.cpp" />
     <ClCompile Include="ConvertStringToInt.cpp" />
     <ClCompile Include="BSTree.cpp" />
@@ -91,13 +92,13 @@
     <ClCompile Include="LinkedList_Stack.cpp" />
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="QuickSort.cpp" />
-
     <ClCompile Include="ReverseWord.cpp" />
     <ClCompile Include="StringCombine.cpp" />
-    <ClCompile Include="RemoveSpecialChar.cpp" />    <ClCompile Include="ReverseWords.cpp" />
-
+    <ClCompile Include="RemoveSpecialChar.cpp" />
+    <ClCompile Include="ReverseWords.cpp" />
     <ClCompile Include="StringPermutation.cpp" />
     <ClCompile Include="TelephoneWords_Recursive.cpp" />
+    <ClCompile Include="template.cpp" />
     <ClCompile Include="TreeTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
