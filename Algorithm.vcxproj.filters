@@ -13,24 +13,55 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Array&amp;String">
+      <UniqueIdentifier>{6b2dc995-0458-4f05-9ef2-bde0f60f6446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sorting">
+      <UniqueIdentifier>{8bb941a7-e45d-4113-aade-904013e16d67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Recursion">
+      <UniqueIdentifier>{cd446d90-7caf-4291-8f04-682712212dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tree">
+      <UniqueIdentifier>{9b501d9e-7f17-4fbe-b3ab-814d0bf4f995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking">
+      <UniqueIdentifier>{d805b3e1-4aac-4d76-aee8-9ab141a733af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="ConvertIntToString.cpp">
+      <Filter>Source Files\Array&amp;String</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertStringToInt.cpp">
+      <Filter>Source Files\Array&amp;String</Filter>
+    </ClCompile>
+    <ClCompile Include="FindFirstNoDupChar.cpp">
+      <Filter>Source Files\Array&amp;String</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveSpecialChar.cpp">
+      <Filter>Source Files\Array&amp;String</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWords.cpp">
+      <Filter>Source Files\Array&amp;String</Filter>
+    </ClCompile>
     <ClCompile Include="MergeSort.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Sorting</Filter>
     </ClCompile>
     <ClCompile Include="QuickSort.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HeapSort.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Sorting</Filter>
     </ClCompile>
     <ClCompile Include="StringPermutation.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Recursion</Filter>
+    </ClCompile>
+    <ClCompile Include="BSTree.cpp">
+      <Filter>Source Files\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="4.1.cpp">
+      <Filter>Source Files\Cracking</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeTest.cpp">
+      <Filter>Source Files\Tree</Filter>
     </ClCompile>
     <ClCompile Include="StringCombine.cpp">
       <Filter>Source Files</Filter>
@@ -44,5 +75,13 @@
     <ClCompile Include="ReverseWord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BSTree.h">
+      <Filter>Source Files\Tree</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
