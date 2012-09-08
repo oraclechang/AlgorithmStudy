@@ -24,8 +24,8 @@ public:
 	void Travelse();
 	void doTravelse(Node*);
 
-private:
 	Node* pRoot;
+private:
 };
 
 #endif

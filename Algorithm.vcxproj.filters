@@ -25,6 +25,9 @@
     <Filter Include="Source Files\Tree">
       <UniqueIdentifier>{9b501d9e-7f17-4fbe-b3ab-814d0bf4f995}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking">
+      <UniqueIdentifier>{d805b3e1-4aac-4d76-aee8-9ab141a733af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -52,6 +55,12 @@
       <Filter>Source Files\Recursion</Filter>
     </ClCompile>
     <ClCompile Include="BSTree.cpp">
+      <Filter>Source Files\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="4.1.cpp">
+      <Filter>Source Files\Cracking</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeTest.cpp">
       <Filter>Source Files\Tree</Filter>
     </ClCompile>
   </ItemGroup>
