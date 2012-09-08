@@ -31,6 +31,33 @@
     <Filter Include="Source Files\Exposed">
       <UniqueIdentifier>{01a83fad-9d93-4c17-bb39-94317cf93911}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\1">
+      <UniqueIdentifier>{c858a8fa-f164-40b6-a2b9-f68d719cb1d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\2">
+      <UniqueIdentifier>{df0842ae-82a5-4328-85da-35e67ce37429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\3">
+      <UniqueIdentifier>{99adbcf5-4b49-4480-950f-d13b4edde623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\4">
+      <UniqueIdentifier>{b20c77bd-c258-42ba-9ab9-ffc68cd98f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\5">
+      <UniqueIdentifier>{d468eaba-11ed-4f98-b883-1f6643df51b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\6">
+      <UniqueIdentifier>{834f5067-d940-4003-9f88-cedd37a5fd8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\7">
+      <UniqueIdentifier>{84a12fa8-117c-480c-bb4f-b38b3ce4105c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\8">
+      <UniqueIdentifier>{8f33e57a-85d9-4a64-863f-91c8afa94c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\9">
+      <UniqueIdentifier>{73d1f828-e61a-4788-aea5-dd9901031aaf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -63,9 +90,6 @@
     <ClCompile Include="TreeTest.cpp">
       <Filter>Source Files\Tree</Filter>
     </ClCompile>
-    <ClCompile Include="4.1.cpp">
-      <Filter>Source Files\Cracking</Filter>
-    </ClCompile>
     <ClCompile Include="LinkedList_Stack.cpp">
       <Filter>Source Files\Exposed</Filter>
     </ClCompile>
@@ -81,8 +105,86 @@
     <ClCompile Include="template.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1.1.cpp">
+      <Filter>Source Files\Cracking\1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.2.cpp">
+      <Filter>Source Files\Cracking\1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.3.cpp">
+      <Filter>Source Files\Cracking\1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.4.cpp">
+      <Filter>Source Files\Cracking\1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.5.cpp">
+      <Filter>Source Files\Cracking\1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.6_Cannot solve.cpp">
+      <Filter>Source Files\Cracking\1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.7.cpp">
+      <Filter>Source Files\Cracking\1</Filter>
+    </ClCompile>
+    <ClCompile Include="4.1.cpp">
+      <Filter>Source Files\Cracking\4</Filter>
+    </ClCompile>
     <ClCompile Include="4.2.cpp">
-      <Filter>Source Files\Cracking</Filter>
+      <Filter>Source Files\Cracking\4</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchTree.cpp">
+      <Filter>Source Files\Cracking\4</Filter>
+    </ClCompile>
+    <ClCompile Include="2.1.cpp">
+      <Filter>Source Files\Cracking\2</Filter>
+    </ClCompile>
+    <ClCompile Include="2.2.cpp">
+      <Filter>Source Files\Cracking\2</Filter>
+    </ClCompile>
+    <ClCompile Include="3.1.cpp">
+      <Filter>Source Files\Cracking\3</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Source Files\Cracking\3</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>Source Files\Cracking\3</Filter>
+    </ClCompile>
+    <ClCompile Include="7.1.cpp">
+      <Filter>Source Files\Cracking\7</Filter>
+    </ClCompile>
+    <ClCompile Include="8.1.cpp">
+      <Filter>Source Files\Cracking\8</Filter>
+    </ClCompile>
+    <ClCompile Include="8.2.cpp">
+      <Filter>Source Files\Cracking\8</Filter>
+    </ClCompile>
+    <ClCompile Include="8.3.cpp">
+      <Filter>Source Files\Cracking\8</Filter>
+    </ClCompile>
+    <ClCompile Include="8.5.cpp">
+      <Filter>Source Files\Cracking\8</Filter>
+    </ClCompile>
+    <ClCompile Include="9.1.cpp">
+      <Filter>Source Files\Cracking\9</Filter>
+    </ClCompile>
+    <ClCompile Include="9.2.cpp">
+      <Filter>Source Files\Cracking\9</Filter>
+    </ClCompile>
+    <ClCompile Include="9.3_Check again.cpp">
+      <Filter>Source Files\Cracking\9</Filter>
+    </ClCompile>
+    <ClCompile Include="9.4.cpp">
+      <Filter>Source Files\Cracking\9</Filter>
+    </ClCompile>
+    <ClCompile Include="9.5_Check again.cpp">
+      <Filter>Source Files\Cracking\9</Filter>
+    </ClCompile>
+    <ClCompile Include="9.6.cpp">
+      <Filter>Source Files\Cracking\9</Filter>
+    </ClCompile>
+    <ClCompile Include="9.7_Cannot solve.cpp">
+      <Filter>Source Files\Cracking\9</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +193,9 @@
     </ClInclude>
     <ClInclude Include="BSTree.h">
       <Filter>Source Files\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Source Files\Cracking\2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
