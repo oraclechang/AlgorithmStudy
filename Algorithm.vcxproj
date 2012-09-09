@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_BSTREE;P_4_2</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_5</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -96,6 +96,10 @@
     <ClCompile Include="3.1.cpp" />
     <ClCompile Include="4.1.cpp" />
     <ClCompile Include="4.2.cpp" />
+    <ClCompile Include="4.3.cpp" />
+    <ClCompile Include="5.1.cpp" />
+    <ClCompile Include="5.2_later.cpp" />
+    <ClCompile Include="5.cpp" />
     <ClCompile Include="7.1.cpp" />
     <ClCompile Include="8.1.cpp" />
     <ClCompile Include="8.2.cpp" />

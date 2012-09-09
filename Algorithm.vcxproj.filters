@@ -58,6 +58,9 @@
     <Filter Include="Source Files\Cracking\9">
       <UniqueIdentifier>{73d1f828-e61a-4788-aea5-dd9901031aaf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\LinkedList">
+      <UniqueIdentifier>{3248d474-ed7f-470e-955e-68b745c21a1b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -185,6 +188,18 @@
     </ClCompile>
     <ClCompile Include="9.7_Cannot solve.cpp">
       <Filter>Source Files\Cracking\9</Filter>
+    </ClCompile>
+    <ClCompile Include="4.3.cpp">
+      <Filter>Source Files\Cracking\4</Filter>
+    </ClCompile>
+    <ClCompile Include="5.1.cpp">
+      <Filter>Source Files\Cracking\5</Filter>
+    </ClCompile>
+    <ClCompile Include="5.2_later.cpp">
+      <Filter>Source Files\Cracking\5</Filter>
+    </ClCompile>
+    <ClCompile Include="5.cpp">
+      <Filter>Source Files\Cracking\5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
