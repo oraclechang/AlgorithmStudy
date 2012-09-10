@@ -201,6 +201,9 @@
     <ClCompile Include="5.cpp">
       <Filter>Source Files\Cracking\5</Filter>
     </ClCompile>
+    <ClCompile Include="HeapSort.cpp">
+      <Filter>Source Files\Sorting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
