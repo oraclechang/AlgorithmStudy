@@ -21,5 +21,7 @@
 #include <algorithm>
 #include <memory>
 #include <iterator>
+#include <numeric>
+#include <random>
 
 using namespace std;

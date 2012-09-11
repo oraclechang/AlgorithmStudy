@@ -61,6 +61,9 @@
     <Filter Include="Source Files\LinkedList">
       <UniqueIdentifier>{3248d474-ed7f-470e-955e-68b745c21a1b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\DP">
+      <UniqueIdentifier>{3822c737-0e8d-4383-a8ae-5435901d60d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -203,6 +206,9 @@
     </ClCompile>
     <ClCompile Include="HeapSort.cpp">
       <Filter>Source Files\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxSum.cpp">
+      <Filter>Source Files\DP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
