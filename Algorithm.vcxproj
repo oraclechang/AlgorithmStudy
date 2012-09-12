@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_MAXSUM</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_FIBO_DP</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +116,8 @@
     <ClCompile Include="ConvertIntToString.cpp" />
     <ClCompile Include="ConvertStringToInt.cpp" />
     <ClCompile Include="BSTree.cpp" />
+    <ClCompile Include="Fibo.cpp" />
+    <ClCompile Include="Fibo_DP.cpp" />
     <ClCompile Include="FindFirstNoDupChar.cpp" />
     <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="LinkedList_Stack.cpp" />

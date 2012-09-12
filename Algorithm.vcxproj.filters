@@ -210,6 +210,12 @@
     <ClCompile Include="MaxSum.cpp">
       <Filter>Source Files\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Fibo.cpp">
+      <Filter>Source Files\Recursion</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibo_DP.cpp">
+      <Filter>Source Files\DP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
