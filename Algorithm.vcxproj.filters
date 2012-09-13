@@ -64,6 +64,9 @@
     <Filter Include="Source Files\DP">
       <UniqueIdentifier>{3822c737-0e8d-4383-a8ae-5435901d60d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\9_New">
+      <UniqueIdentifier>{ced57cd4-1435-4943-ad8e-53cc097a5f3d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -215,6 +218,15 @@
     </ClCompile>
     <ClCompile Include="Fibo_DP.cpp">
       <Filter>Source Files\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="9.3.new.cpp">
+      <Filter>Source Files\Cracking\9_New</Filter>
+    </ClCompile>
+    <ClCompile Include="9.1.new.cpp">
+      <Filter>Source Files\Cracking\9_New</Filter>
+    </ClCompile>
+    <ClCompile Include="9.2.new.cpp">
+      <Filter>Source Files\Cracking\9_New</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

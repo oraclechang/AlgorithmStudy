@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_FIBO_DP</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_9_3_NEW</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,11 +107,14 @@
     <ClCompile Include="8.5.cpp" />
     <ClCompile Include="9.1.cpp" />
     <ClCompile Include="9.2.cpp" />
+    <ClCompile Include="9.3.new.cpp" />
     <ClCompile Include="9.3_Check again.cpp" />
     <ClCompile Include="9.4.cpp" />
     <ClCompile Include="9.5_Check again.cpp" />
     <ClCompile Include="9.6.cpp" />
     <ClCompile Include="9.7_Cannot solve.cpp" />
+    <ClCompile Include="9.1.new.cpp" />
+    <ClCompile Include="9.2.new.cpp" />
     <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="ConvertIntToString.cpp" />
     <ClCompile Include="ConvertStringToInt.cpp" />
