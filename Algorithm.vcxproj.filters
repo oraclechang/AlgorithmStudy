@@ -231,6 +231,9 @@
     <ClCompile Include="9.2.new.cpp">
       <Filter>Source Files\Cracking\9_New</Filter>
     </ClCompile>
+    <ClCompile Include="LinkedListTest.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -240,7 +243,10 @@
       <Filter>Source Files\Tree</Filter>
     </ClInclude>
     <ClInclude Include="LinkedList.h">
-      <Filter>Source Files\Cracking\2</Filter>
+      <Filter>Source Files\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList2.h">
+      <Filter>Source Files\LinkedList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
