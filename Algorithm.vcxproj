@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_9_3_NEW</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_LONGEST_NONDECREASING_SEQ</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +124,7 @@
     <ClCompile Include="FindFirstNoDupChar.cpp" />
     <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="LinkedList_Stack.cpp" />
+    <ClCompile Include="LongestNonDecreasingSeq.cpp" />
     <ClCompile Include="MaxSum.cpp" />
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="Queue.cpp" />

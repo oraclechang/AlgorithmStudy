@@ -219,6 +219,8 @@
     <ClCompile Include="Fibo_DP.cpp">
       <Filter>Source Files\DP</Filter>
     </ClCompile>
+    <ClCompile Include="LongestNonDecreasingSeq.cpp">
+      <Filter>Source Files\DP</Filter>
     <ClCompile Include="9.3.new.cpp">
       <Filter>Source Files\Cracking\9_New</Filter>
     </ClCompile>
