@@ -1,3 +1,5 @@
+#ifdef _LINKED_LIST_2_
+
 #include "header.h"
 
 template< typename T >
@@ -114,3 +116,4 @@ void LinkedList< T >::deleteDups2()
 	}
 }
 
+#endif

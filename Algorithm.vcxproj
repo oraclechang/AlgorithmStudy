@@ -82,7 +82,7 @@
     <ClInclude Include="BSTree.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="LinkedList.h" />
-    <ClInclude Include="LinkedList2.h" />
+    <ClCompile Include="LinkedList2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.1.cpp" />
@@ -124,7 +124,6 @@
     <ClCompile Include="Fibo_DP.cpp" />
     <ClCompile Include="FindFirstNoDupChar.cpp" />
     <ClCompile Include="HeapSort.cpp" />
-    <ClCompile Include="LinkedListTest.cpp" />
     <ClCompile Include="LinkedList_Stack.cpp" />
     <ClCompile Include="LongestNonDecreasingSeq.cpp" />
     <ClCompile Include="MaxSum.cpp" />
