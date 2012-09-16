@@ -67,6 +67,9 @@
     <Filter Include="Source Files\Cracking\9_New">
       <UniqueIdentifier>{ced57cd4-1435-4943-ad8e-53cc097a5f3d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\2_New">
+      <UniqueIdentifier>{716a88a4-4407-46de-8fa5-ab6548c8ba76}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -145,9 +148,6 @@
       <Filter>Source Files\Cracking\4</Filter>
     </ClCompile>
     <ClCompile Include="2.1.cpp">
-      <Filter>Source Files\Cracking\2</Filter>
-    </ClCompile>
-    <ClCompile Include="2.2.cpp">
       <Filter>Source Files\Cracking\2</Filter>
     </ClCompile>
     <ClCompile Include="3.1.cpp">
@@ -234,8 +234,14 @@
     <ClCompile Include="LinkedList2.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList_shared_ptr.cpp">
+    <ClCompile Include="LinkedList_shared_ptr.h">
       <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="2.2.new.cpp">
+      <Filter>Source Files\Cracking\2_New</Filter>
+    </ClCompile>
+    <ClCompile Include="2.4.new.cpp">
+      <Filter>Source Files\Cracking\2_New</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

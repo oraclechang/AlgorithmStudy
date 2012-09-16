@@ -2,26 +2,27 @@
 
 #include "Header.h"
 
+template< typename T >
 struct Node
 {
 	shared_ptr< Node > pNext;
-	int data;
+	T data;
 
-	Node(int _data) : data(_data), pNext(nullptr) {}
+	Node(T _data) : data(_data), pNext(nullptr) {}
 };
 
 
 // Insert
-//bool InsertNodeAtAfter(Node** pNode, int data)
-bool InsertNodeAtAfter(shared_ptr< Node >* ppNode, int data)
+template< typename T >
+bool InsertNodeAtAfter(shared_ptr< Node< T > >* ppNode, T data)
 {
-	shared_ptr< Node > pNewNode(new Node(data));
+	shared_ptr< Node< T > > pNewNode(new Node(data));
 
 	if (nullptr == *ppNode)
 		*ppNode = pNewNode;
 	else
 	{
-		shared_ptr< Node>  pTmp = *ppNode;
+		shared_ptr< Node< T > >  pTmp = *ppNode;
 		pNewNode->pNext = pTmp->pNext;
 		pTmp->pNext = pNewNode;
 	}
@@ -33,16 +34,16 @@ bool InsertNodeAtAfter(shared_ptr< Node >* ppNode, int data)
 // Search
 // Travelse
 
-//bool InsertNodeAtTail(Node** ppNode, int data)
-bool InsertNodeAtTail(shared_ptr< Node >* ppNode, int data)
+template< typename T >
+bool InsertNodeAtTail(shared_ptr< Node< T > >* ppNode, int data)
 {
-	shared_ptr< Node > pNewNode(new Node(data));
+	shared_ptr< Node< T > > pNewNode(new Node< T >(data));
 
 	if (nullptr == *ppNode)
 		*ppNode = pNewNode;
 	else
 	{
-		shared_ptr< Node > pTmp = *ppNode;
+		shared_ptr< Node< T > > pTmp = *ppNode;
 
 		while (nullptr != pTmp->pNext)
 			pTmp = pTmp->pNext;
@@ -53,12 +54,13 @@ bool InsertNodeAtTail(shared_ptr< Node >* ppNode, int data)
 	return true;
 }
 
-bool DeleteNode(shared_ptr< Node >* ppNode,const int data)
+template< typename T >
+bool DeleteNode(shared_ptr< Node< T > >* ppNode,const T data)
 {
 	if (nullptr == *ppNode)
 		return false;
 
-	shared_ptr< Node > pTmp;
+	shared_ptr< Node< T > > pTmp;
 	pTmp = *ppNode;
 	if (data == (*ppNode)->data)
 	{
@@ -68,7 +70,7 @@ bool DeleteNode(shared_ptr< Node >* ppNode,const int data)
 	}
 	else
 	{
-		shared_ptr< Node > pPrevNode = pTmp;
+		shared_ptr< Node< T > > pPrevNode = pTmp;
 		while (nullptr != pTmp)
 		{
 			if (data == pTmp->data)
@@ -86,7 +88,8 @@ bool DeleteNode(shared_ptr< Node >* ppNode,const int data)
 	return false;
 }
 
-void TravelseNode(shared_ptr< Node > pHead)
+template< typename T >
+void TravelseNode(shared_ptr< Node< T > > pHead)
 {
 	while (nullptr != pHead)		// 주의!!! pHead->pNext 가 null일때가지 출력하면 마지막 node 가 출력되지 않음
 	{
@@ -96,16 +99,16 @@ void TravelseNode(shared_ptr< Node > pHead)
 	cout << endl;
 }
 
+/*
 void main()
 {
 	shared_ptr< Node > pHead(nullptr);
 
-	/*
-	InsertAfter(&pHead, 1);
-	InsertAfter(&pHead, 2);
-	InsertAfter(&pHead, 3);
-	InsertAfter(&pHead, 4);
-	*/
+	//InsertAfter(&pHead, 1);
+	//InsertAfter(&pHead, 2);
+	//InsertAfter(&pHead, 3);
+	//InsertAfter(&pHead, 4);
+
 	InsertNodeAtTail(&pHead, 1);
 	InsertNodeAtTail(&pHead, 2);
 	InsertNodeAtTail(&pHead, 3);
@@ -120,5 +123,6 @@ void main()
 	DeleteNode(&pHead, 4);		// tail 삭제 테스트
 	TravelseNode(pHead);
 }
+*/
 
 #endif
