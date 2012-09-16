@@ -1,4 +1,4 @@
-#ifdef P_2_2
+#ifdef P_2_2_NEW
 
 /*
 Problem

@@ -70,6 +70,9 @@
     <Filter Include="Source Files\Cracking\2_New">
       <UniqueIdentifier>{716a88a4-4407-46de-8fa5-ab6548c8ba76}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\3_New">
+      <UniqueIdentifier>{e958be8e-850b-4a25-a54a-3d08ee61ca51}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -252,6 +255,12 @@
     <ClCompile Include="2.7.new.cpp">
       <Filter>Source Files\Cracking\2_New</Filter>
     </ClCompile>
+    <ClCompile Include="3.1.new.cpp">
+      <Filter>Source Files\Cracking\3_New</Filter>
+    </ClCompile>
+    <ClCompile Include="3.2.new.cpp">
+      <Filter>Source Files\Cracking\3_New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -262,6 +271,9 @@
     </ClInclude>
     <ClInclude Include="LinkedList.h">
       <Filter>Source Files\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack_LinkedList.h">
+      <Filter>Source Files\Cracking\3_New</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
