@@ -8,3 +8,6 @@
 *.ilk
 *.opensdf
 *.exe
+
+Algorithm.v11.suo
+Algorithm.vcxproj.user
