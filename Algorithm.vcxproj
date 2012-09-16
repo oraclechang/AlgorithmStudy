@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_2_4_NEW;_LINKED_LIST_SMARTPTR_</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_2_7_NEW;_LINKED_LIST_SMARTPTR_</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,6 +83,9 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="LinkedList.h" />
     <ClCompile Include="2.4.new.cpp" />
+    <ClCompile Include="2.5.new.cpp" />
+    <ClCompile Include="2.6.new.cpp" />
+    <ClCompile Include="2.7.new.cpp" />
     <ClCompile Include="LinkedList2.cpp" />
   </ItemGroup>
   <ItemGroup>

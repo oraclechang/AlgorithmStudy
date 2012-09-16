@@ -11,12 +11,12 @@ struct Node
 	Node(T _data) : data(_data), pNext(nullptr) {}
 };
 
-
+/*
 // Insert
 template< typename T >
 bool InsertNodeAtAfter(shared_ptr< Node< T > >* ppNode, T data)
 {
-	shared_ptr< Node< T > > pNewNode(new Node(data));
+	shared_ptr< Node< T > > pNewNode(new Node< T >(data));
 
 	if (nullptr == *ppNode)
 		*ppNode = pNewNode;
@@ -29,10 +29,7 @@ bool InsertNodeAtAfter(shared_ptr< Node< T > >* ppNode, T data)
 
 	return true;
 }
-
-// Delete
-// Search
-// Travelse
+*/
 
 template< typename T >
 bool InsertNodeAtTail(shared_ptr< Node< T > >* ppNode, int data)
