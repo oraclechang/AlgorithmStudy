@@ -261,6 +261,12 @@
     <ClCompile Include="3.2.new.cpp">
       <Filter>Source Files\Cracking\3_New</Filter>
     </ClCompile>
+    <ClCompile Include="3.5.new.cpp">
+      <Filter>Source Files\Cracking\3_New</Filter>
+    </ClCompile>
+    <ClCompile Include="3.6.new.cpp">
+      <Filter>Source Files\Cracking\3_New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
