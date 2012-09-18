@@ -35,4 +35,29 @@ void StackPush(shared_ptr< Node< T > >* pTop, T data)
 	}
 }
 
+template< typename T >
+void StackPushWithMin(shared_ptr< Node< T > >* pTop, 
+					  shared_ptr< Node< T > >* pMinStack,
+					  T data)
+{
+	shared_ptr< Node< T > > pNewNode(new Node< T >(data));
+
+	if (nullptr == *pTop)
+		*pTop = pNewNode;
+	else
+	{
+		pNewNode->pNext = *pTop;
+		*pTop = pNewNode;
+	}
+
+	if (data < StackPeek(pMinStack))
+		StackPush(pMinStack, data);
+}
+
+template< typename T >
+T StackPeek(shared_ptr< Node < T > > pTop)
+{
+	return pTop->data;
+}
+
 #endif

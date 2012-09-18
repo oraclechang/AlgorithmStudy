@@ -1,4 +1,4 @@
-#ifdef P_3_3_NEW
+#ifdef P_3_2_NEW
 
 /*
 Problem
@@ -8,6 +8,8 @@ Solution
 */
 
 #include "Header.h"
+#include "Stack_LinkedList.h"
+
 
 void main()
 {
