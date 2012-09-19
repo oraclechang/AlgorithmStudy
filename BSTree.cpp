@@ -22,8 +22,31 @@ void BSTree::doInsert(Node** pNode, const int data)
 	}
 }
 
-void BSTree::BFS()
+void BSTree::BFS(Node* pHead)
 {
+	deque< Node* > que;
+	que.push_back(pHead);
+
+	while (!que.empty())
+	{
+		Node* pTmp = que.front();
+		que.pop_front();
+
+		if (nullptr != pTmp)
+		{
+			cout << pTmp->data << " ";
+			for (int i = 0; i < 2; ++i) // adjcent nodes(left, right)
+			{
+				Node* pAdjNode;
+				if (0 == i)
+					pAdjNode = pTmp->pLeft;
+				else
+					pAdjNode = pTmp->pRight;
+
+				que.push_back(pAdjNode);
+			}
+		}
+	}
 }
 
 void BSTree::DFS()

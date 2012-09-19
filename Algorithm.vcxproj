@@ -54,7 +54,8 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_3_6_NEW;_STACK_LINKEDLIST_</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_4_4_NEW;_BSTREE</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,11 @@
     <ClCompile Include="3.2.new.cpp" />
     <ClCompile Include="3.5.new.cpp" />
     <ClCompile Include="3.6.new.cpp" />
+    <ClCompile Include="3.7.new.cpp" />
+    <ClCompile Include="4.1.new.cpp" />
+    <ClCompile Include="4.2.new.cpp" />
+    <ClCompile Include="4.3.new.cpp" />
+    <ClCompile Include="4.4.new.cpp" />
     <ClCompile Include="LinkedList2.cpp" />
     <ClInclude Include="Stack_LinkedList.h" />
   </ItemGroup>

@@ -73,6 +73,9 @@
     <Filter Include="Source Files\Cracking\3_New">
       <UniqueIdentifier>{e958be8e-850b-4a25-a54a-3d08ee61ca51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\4_New">
+      <UniqueIdentifier>{54119765-69eb-40a0-a7d5-3c720ef444b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -145,9 +148,6 @@
       <Filter>Source Files\Cracking\4</Filter>
     </ClCompile>
     <ClCompile Include="4.2.cpp">
-      <Filter>Source Files\Cracking\4</Filter>
-    </ClCompile>
-    <ClCompile Include="BinarySearchTree.cpp">
       <Filter>Source Files\Cracking\4</Filter>
     </ClCompile>
     <ClCompile Include="2.1.cpp">
@@ -266,6 +266,24 @@
     </ClCompile>
     <ClCompile Include="3.6.new.cpp">
       <Filter>Source Files\Cracking\3_New</Filter>
+    </ClCompile>
+    <ClCompile Include="3.7.new.cpp">
+      <Filter>Source Files\Cracking\3_New</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchTree.cpp">
+      <Filter>Source Files\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="4.1.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="4.3.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="4.4.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
