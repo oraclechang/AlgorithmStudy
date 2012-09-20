@@ -285,6 +285,21 @@
     <ClCompile Include="4.4.new.cpp">
       <Filter>Source Files\Cracking\4_New</Filter>
     </ClCompile>
+    <ClCompile Include="4.5.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="4.6.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="4.7.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="4.8.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="4.9.new.cpp">
+      <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">

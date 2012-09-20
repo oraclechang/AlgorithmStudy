@@ -96,6 +96,11 @@
     <ClCompile Include="4.2.new.cpp" />
     <ClCompile Include="4.3.new.cpp" />
     <ClCompile Include="4.4.new.cpp" />
+    <ClCompile Include="4.5.new.cpp" />
+    <ClCompile Include="4.6.new.cpp" />
+    <ClCompile Include="4.7.new.cpp" />
+    <ClCompile Include="4.8.new.cpp" />
+    <ClCompile Include="4.9.new.cpp" />
     <ClCompile Include="LinkedList2.cpp" />
     <ClInclude Include="Stack_LinkedList.h" />
   </ItemGroup>

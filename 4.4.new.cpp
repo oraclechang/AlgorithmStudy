@@ -10,34 +10,30 @@ Solution
 #include "Header.h"
 #include "BSTree.h"
 
-void CreateLevelLinkedList(Node* pHead)
+auto CreateLevelLinkedList(Node* pHead) -> list< list< Node * > >
 {
-	vector< list< Node* > > vResultList;
-	list< Node* > liCurrLevelList;
+	list< list< Node* > > vResultList;
+	list< Node* >* liLevelList = new list< Node * >;
 
-	pHead->status = visiting;
-	deque< Node* > que;
-	que.push_back(pHead);
-	//liCurrLevelList.push_back(pHead);
+	liLevelList->push_back(pHead);
 
-	while (!liCurrLevelList.empty())
+	while (!liLevelList->empty())
 	{
-		Node* pTmp = que.front();
-		que.pop_front();
+		vResultList.push_back(*liLevelList);
+		list< Node * >* liParentList = liLevelList;
 
-		for (int i = 0; i < 2; ++i)
+		liLevelList = new list< Node * >;
+		for (auto i = liParentList->begin(); i != liParentList->end(); ++i)
 		{
-			Node* pTmpDescNode;
-			if (0 == i)
-				pTmpDescNode = pTmp->pLeft;
-			else if (1 == i)
-				pTmpDescNode = pTmp->pRight;
-
-			pTmpDescNode->status = visiting;
-			que.push_back(pTmpDescNode);
-	//		liCurrLevelList.push_back(pTmpDescNode);
+			if (nullptr != (*i)->pLeft)
+				liLevelList->push_back((*i)->pLeft);
+			else if (nullptr != (*i)->pRight)
+				liLevelList->push_back((*i)->pRight);
 		}
+
 	}
+
+	return vResultList;
 }
 
 void main()
@@ -52,7 +48,20 @@ void main()
 	oBSTree.Insert(4);
 	oBSTree.Insert(5);
 
-	oBSTree.BFS(oBSTree.pRoot);
+	//oBSTree.BFS(oBSTree.pRoot);
+	auto Result = CreateLevelLinkedList(oBSTree.pRoot);
+
+	int i = 0;
+	for (auto it = Result.begin(); it != Result.end(); ++it)
+	{
+		list< Node * > tmpList = *it;
+		cout << "Level " << i << " : ";
+		for (auto it2 = tmpList.begin(); it2 != tmpList.end(); ++it2)
+			cout << (*it2)->data << " ";
+
+		i++;
+		cout << endl;
+	}
 }
 
 #endif
