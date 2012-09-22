@@ -76,6 +76,9 @@
     <Filter Include="Source Files\Cracking\4_New">
       <UniqueIdentifier>{54119765-69eb-40a0-a7d5-3c720ef444b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\5_New">
+      <UniqueIdentifier>{5f6383c9-66d5-4789-9d2b-0a9a10af8fc8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConvertIntToString.cpp">
@@ -299,6 +302,12 @@
     </ClCompile>
     <ClCompile Include="4.9.new.cpp">
       <Filter>Source Files\Cracking\4_New</Filter>
+    </ClCompile>
+    <ClCompile Include="5.1.new.cpp">
+      <Filter>Source Files\Cracking\5_New</Filter>
+    </ClCompile>
+    <ClCompile Include="5.2.new.cpp">
+      <Filter>Source Files\Cracking\5_New</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
