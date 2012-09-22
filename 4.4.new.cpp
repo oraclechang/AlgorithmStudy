@@ -27,10 +27,9 @@ auto CreateLevelLinkedList(Node* pHead) -> list< list< Node * > >
 		{
 			if (nullptr != (*i)->pLeft)
 				liLevelList->push_back((*i)->pLeft);
-			else if (nullptr != (*i)->pRight)
+			if (nullptr != (*i)->pRight)
 				liLevelList->push_back((*i)->pRight);
 		}
-
 	}
 
 	return vResultList;
