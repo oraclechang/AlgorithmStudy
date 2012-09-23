@@ -1,4 +1,4 @@
-#ifdef _BSTREE
+//#ifdef _BSTREE
 
 #include "Header.h"
 
@@ -18,8 +18,8 @@ class BSTree
 {
 public:
 	BSTree() {pRoot = nullptr;}
-	void Insert(int);
-	void doInsert(Node**, const int);
+	Node* Insert(int);
+	Node* doInsert(Node**, const int);
 	void Delete();
 	void DFS();
 	void BFS(Node*);
@@ -31,4 +31,4 @@ public:
 private:
 };
 
-#endif
+//#endif

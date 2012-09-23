@@ -79,31 +79,22 @@
     <Filter Include="Source Files\Cracking\5_New">
       <UniqueIdentifier>{5f6383c9-66d5-4789-9d2b-0a9a10af8fc8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Exposed\5">
+      <UniqueIdentifier>{16677577-4b2c-4f45-b823-711aef327c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exposed\7">
+      <UniqueIdentifier>{d6c31ec5-dda7-42b8-895d-52e3cbc1b403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exposed\4">
+      <UniqueIdentifier>{503b752f-af2b-4278-98fd-cf261d2dae6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ConvertIntToString.cpp">
-      <Filter>Source Files\Array&amp;String</Filter>
-    </ClCompile>
-    <ClCompile Include="ConvertStringToInt.cpp">
-      <Filter>Source Files\Array&amp;String</Filter>
-    </ClCompile>
-    <ClCompile Include="FindFirstNoDupChar.cpp">
-      <Filter>Source Files\Array&amp;String</Filter>
-    </ClCompile>
-    <ClCompile Include="RemoveSpecialChar.cpp">
-      <Filter>Source Files\Array&amp;String</Filter>
-    </ClCompile>
-    <ClCompile Include="ReverseWords.cpp">
-      <Filter>Source Files\Array&amp;String</Filter>
-    </ClCompile>
     <ClCompile Include="MergeSort.cpp">
       <Filter>Source Files\Sorting</Filter>
     </ClCompile>
     <ClCompile Include="QuickSort.cpp">
       <Filter>Source Files\Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="StringPermutation.cpp">
-      <Filter>Source Files\Recursion</Filter>
     </ClCompile>
     <ClCompile Include="BSTree.cpp">
       <Filter>Source Files\Tree</Filter>
@@ -115,12 +106,6 @@
       <Filter>Source Files\Exposed</Filter>
     </ClCompile>
     <ClCompile Include="ReverseWord.cpp">
-      <Filter>Source Files\Exposed</Filter>
-    </ClCompile>
-    <ClCompile Include="StringCombine.cpp">
-      <Filter>Source Files\Exposed</Filter>
-    </ClCompile>
-    <ClCompile Include="TelephoneWords_Recursive.cpp">
       <Filter>Source Files\Exposed</Filter>
     </ClCompile>
     <ClCompile Include="template.cpp">
@@ -308,6 +293,45 @@
     </ClCompile>
     <ClCompile Include="5.2.new.cpp">
       <Filter>Source Files\Cracking\5_New</Filter>
+    </ClCompile>
+    <ClCompile Include="5_PreorderTravelse.cpp">
+      <Filter>Source Files\Exposed\5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_CommonAncestor.cpp">
+      <Filter>Source Files\Exposed\5</Filter>
+    </ClCompile>
+    <ClCompile Include="StringCombine.cpp">
+      <Filter>Source Files\Exposed\7</Filter>
+    </ClCompile>
+    <ClCompile Include="StringPermutation.cpp">
+      <Filter>Source Files\Exposed\7</Filter>
+    </ClCompile>
+    <ClCompile Include="TelephoneWords_Recursive.cpp">
+      <Filter>Source Files\Exposed\7</Filter>
+    </ClCompile>
+    <ClCompile Include="StringPermutation2.cpp">
+      <Filter>Source Files\Exposed\7</Filter>
+    </ClCompile>
+    <ClCompile Include="4_FindNonRepeted.cpp">
+      <Filter>Source Files\Exposed\4</Filter>
+    </ClCompile>
+    <ClCompile Include="FindFirstNoDupChar.cpp">
+      <Filter>Source Files\Exposed\4</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveSpecialChar.cpp">
+      <Filter>Source Files\Exposed\4</Filter>
+    </ClCompile>
+    <ClCompile Include="4_RemoveSpecialChar.cpp">
+      <Filter>Source Files\Exposed\4</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWords.cpp">
+      <Filter>Source Files\Exposed\4</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertStringToInt.cpp">
+      <Filter>Source Files\Exposed\4</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertIntToString.cpp">
+      <Filter>Source Files\Exposed\4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

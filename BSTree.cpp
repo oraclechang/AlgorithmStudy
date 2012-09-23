@@ -1,17 +1,18 @@
-#ifdef _BSTREE
+//#ifdef _BSTREE
 
 #include "BSTree.h"
 
-void BSTree::Insert(const int data)
+Node* BSTree::Insert(const int data)
 {
-	doInsert(&pRoot, data);
+	return doInsert(&pRoot, data);
 }
 
-void BSTree::doInsert(Node** pNode, const int data)
+Node* BSTree::doInsert(Node** pNode, const int data)
 {
 	if (nullptr == *pNode)
 	{
 		*pNode = new Node(data);
+		return *pNode;
 	}
 	else
 	{
@@ -69,4 +70,4 @@ void BSTree::doTravelse(Node* pNode)
 }
 
 
-#endif
+//#endif

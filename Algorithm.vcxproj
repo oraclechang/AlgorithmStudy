@@ -54,7 +54,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);P_5_1_NEW;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_4_6_NEW_</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
@@ -101,8 +101,12 @@
     <ClCompile Include="4.7.new.cpp" />
     <ClCompile Include="4.8.new.cpp" />
     <ClCompile Include="4.9.new.cpp" />
+    <ClCompile Include="4_RemoveSpecialChar.cpp" />
     <ClCompile Include="5.1.new.cpp" />
     <ClCompile Include="5.2.new.cpp" />
+    <ClCompile Include="5_CommonAncestor.cpp" />
+    <ClCompile Include="4_FindNonRepeted.cpp" />
+    <ClCompile Include="5_PreorderTravelse.cpp" />
     <ClCompile Include="LinkedList2.cpp" />
     <ClInclude Include="Stack_LinkedList.h" />
   </ItemGroup>
@@ -159,6 +163,7 @@
     <ClCompile Include="RemoveSpecialChar.cpp" />
     <ClCompile Include="ReverseWords.cpp" />
     <ClCompile Include="StringPermutation.cpp" />
+    <ClCompile Include="StringPermutation2.cpp" />
     <ClCompile Include="TelephoneWords_Recursive.cpp" />
     <ClCompile Include="template.cpp" />
     <ClCompile Include="TreeTest.cpp" />
