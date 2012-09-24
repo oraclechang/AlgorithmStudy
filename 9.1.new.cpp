@@ -11,6 +11,45 @@ Solution
 
 #include "Header.h"
 
+void MyCountWay(int nLeftStep, int& nCount)
+{
+
+	if (0 == nLeftStep)
+	{
+		++nCount;
+		return;
+	}
+
+	if (0 > nLeftStep)
+		return;
+
+	MyCountWay(nLeftStep - 1, nCount);
+	MyCountWay(nLeftStep - 2, nCount);
+	MyCountWay(nLeftStep - 3, nCount);
+}
+
+int MyCountWayDP(vector< int >& vResult, int nStep)
+{
+	vResult[0] = 0;
+	vResult[1] = 1;
+	vResult[2] = 2;
+	vResult[3] = 4;
+
+	if (0 >= nStep)
+		return 0;
+
+	if (3 >= nStep)
+		return vResult[nStep];
+
+	for (int i = 4; i <= nStep; ++i)
+	{
+		vResult[i] = vResult[i - 1] + vResult[i - 2] + vResult[i - 3];
+	}
+
+	return vResult[nStep];
+}
+
+
 int CountWay(int n)
 {
 	if (0 == n)
@@ -47,10 +86,18 @@ int CountWayDP(int n)
 
 void main()
 {
-	int n = 20;
-	cout << CountWay(n) << endl;;
+	int n = 5;
+	cout << "CountWay : " << CountWay(n) << endl;;
 
-	cout << CountWayDP(n) << endl;
+	cout << "CoundWayDP : " << CountWayDP(n) << endl;
+
+	int nCount = 0;
+	MyCountWay(n, nCount);
+	cout << "MyCountWay : " << nCount << endl;
+
+	vector< int > vResult(100, 0);
+	int Result = MyCountWayDP(vResult, n);
+	cout << "MyCountWayDB : " << Result << endl;
 }
 
 #endif
