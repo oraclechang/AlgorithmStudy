@@ -333,6 +333,9 @@
     <ClCompile Include="ConvertIntToString.cpp">
       <Filter>Source Files\Exposed\4</Filter>
     </ClCompile>
+    <ClCompile Include="9.4.new.cpp">
+      <Filter>Source Files\Cracking\9_New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
