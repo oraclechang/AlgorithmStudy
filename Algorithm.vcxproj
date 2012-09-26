@@ -83,6 +83,7 @@
     <ClInclude Include="BSTree.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClCompile Include="10.4.new.cpp" />
     <ClCompile Include="2.4.new.cpp" />
     <ClCompile Include="2.5.new.cpp" />
     <ClCompile Include="2.6.new.cpp" />
@@ -109,6 +110,7 @@
     <ClCompile Include="5_PreorderTravelse.cpp" />
     <ClCompile Include="9.4.new.cpp" />
     <ClCompile Include="9.5.new.cpp" />
+    <ClCompile Include="9.7.new.cpp" />
     <ClCompile Include="LinkedList2.cpp" />
     <ClInclude Include="Stack_LinkedList.h" />
   </ItemGroup>
