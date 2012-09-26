@@ -88,6 +88,9 @@
     <Filter Include="Source Files\Exposed\4">
       <UniqueIdentifier>{503b752f-af2b-4278-98fd-cf261d2dae6e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\10_New">
+      <UniqueIdentifier>{4919d641-fca6-4e0f-adfd-a0feae0a34aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MergeSort.cpp">
@@ -335,6 +338,12 @@
     </ClCompile>
     <ClCompile Include="9.4.new.cpp">
       <Filter>Source Files\Cracking\9_New</Filter>
+    </ClCompile>
+    <ClCompile Include="9.7.new.cpp">
+      <Filter>Source Files\Cracking\9_New</Filter>
+    </ClCompile>
+    <ClCompile Include="10.4.new.cpp">
+      <Filter>Source Files\Cracking\10_New</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
