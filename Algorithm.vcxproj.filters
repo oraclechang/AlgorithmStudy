@@ -336,6 +336,9 @@
     <ClCompile Include="9.4.new.cpp">
       <Filter>Source Files\Cracking\9_New</Filter>
     </ClCompile>
+    <ClCompile Include="9.5.new.cpp">
+      <Filter>Source Files\Cracking\9_New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">

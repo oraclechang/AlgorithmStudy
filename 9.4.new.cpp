@@ -9,6 +9,7 @@ Solution
 
 #include "Header.h"
 
+/*
 deque< deque< int >* >* GetSubsets(deque< int >& set, int index)
 {
 	deque< deque< int >* >* allsubsets;
@@ -36,6 +37,41 @@ deque< deque< int >* >* GetSubsets(deque< int >& set, int index)
 
 	return allsubsets;
 }
+*/
+
+deque< int > MyConvertIntToSet(int k, deque< int > sSet)
+{
+	int nMask = 1 << sSet.size();
+	int nIdx = 0;
+	deque< int > sSubset;
+
+
+	while (0 < nMask)
+	{
+		nMask >>= 1;
+		if (nMask & k)
+			sSubset.push_back(sSet[nIdx]);
+
+		++nIdx;
+	}
+
+	return sSubset;
+}
+
+deque< deque< int > > GetSubsets2(deque< int > set)
+{
+	deque< deque< int > > allsubsets;
+	int nMax = 1 << set.size();
+
+	for (int k = 0; k < nMax; ++k)
+	{
+		deque< int > sSubset = MyConvertIntToSet(k, set);
+		allsubsets.push_back( sSubset );
+	}
+
+	return allsubsets;
+}
+
 
 void main()
 {
@@ -43,9 +79,20 @@ void main()
 	set.push_back( 1 );
 	set.push_back( 2 );
 	set.push_back( 3 );
-	set.push_back( 4 );
+	//set.push_back( 4 );
 
-	auto result = GetSubsets(set, 0);
+	//auto result = GetSubsets(set, 0);
+	auto result = GetSubsets2(set);
+
+	for ( auto x : result )
+	{
+		for ( auto y : x )
+		{
+			cout << y << " ";
+		}
+		cout << endl;
+	}
+
 }
 
 #endif
