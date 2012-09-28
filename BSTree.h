@@ -1,4 +1,4 @@
-//#ifdef _BSTREE
+#ifdef _BSTREE
 
 #include "Header.h"
 
@@ -31,4 +31,4 @@ public:
 private:
 };
 
-//#endif
+#endif

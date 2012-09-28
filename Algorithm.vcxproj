@@ -54,13 +54,17 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_9_5_NEW_</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DRAW_CIRCLE_;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -83,7 +87,16 @@
     <ClInclude Include="BSTree.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClCompile Include="1.6.new.cpp" />
     <ClCompile Include="10.4.new.cpp" />
+    <ClCompile Include="11.1.new.cpp" />
+    <ClCompile Include="11.2.new.cpp" />
+    <ClCompile Include="11.3.new.cpp" />
+    <ClCompile Include="11.5.new.cpp" />
+    <ClCompile Include="11.6.new.cpp" />
+    <ClCompile Include="13.7.new.cpp" />
+    <ClCompile Include="13.8.new.cpp" />
+    <ClCompile Include="2.1.new.cpp" />
     <ClCompile Include="2.4.new.cpp" />
     <ClCompile Include="2.5.new.cpp" />
     <ClCompile Include="2.6.new.cpp" />
@@ -111,7 +124,10 @@
     <ClCompile Include="9.4.new.cpp" />
     <ClCompile Include="9.5.new.cpp" />
     <ClCompile Include="9.7.new.cpp" />
+    <ClCompile Include="ArraySerialize.cpp" />
+    <ClCompile Include="DrawCircle.cpp" />
     <ClCompile Include="LinkedList2.cpp" />
+    <ClInclude Include="LinkedList3.h" />
     <ClInclude Include="Stack_LinkedList.h" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +170,7 @@
     <ClCompile Include="Fibo_DP.cpp" />
     <ClCompile Include="FindFirstNoDupChar.cpp" />
     <ClCompile Include="HeapSort.cpp" />
+    <ClCompile Include="LinkedList3.cpp" />
     <ClCompile Include="LinkedList_shared_ptr.h" />
     <ClCompile Include="LinkedList_Stack.cpp" />
     <ClCompile Include="LongestNonDecreasingSeq.cpp" />
@@ -161,6 +178,7 @@
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="Random.cpp" />
     <ClCompile Include="ReverseWord.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="StringCombine.cpp" />

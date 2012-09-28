@@ -1,4 +1,4 @@
-#ifdef P_4_5_NEW
+#ifdef _4_5_NEW_
 
 /*
 Problem
@@ -26,6 +26,33 @@ bool BSTCheck(Node* pRoot, int& nLastData)
 
 	if (!BSTCheck(pRoot->pRight, nLastData))
 		return false;
+
+	return true;
+}
+
+bool MyCheckBST(Node* pRoot)
+{
+	if (nullptr == pRoot)
+		return true;
+
+	int nLeftData = 0;
+	int nRightData = 0;
+	int nRootData = pRoot->data;
+
+	if (nullptr == pRoot->pLeft)
+		nLeftData = numeric_limits< int >::min();
+	else
+		nLeftData = pRoot->pLeft->data;
+
+	if (nullptr == pRoot->pRight)
+		nRightData = numeric_limits< int >::max();
+	else
+		nRightData = pRoot->pRight->data;
+
+	if ( !(nLeftData < nRootData && nRootData <= nRightData) )
+		return false;
+	else
+		return ( MyCheckBST(pRoot->pLeft) && MyCheckBST(pRoot->pRight) );
 }
 
 void main()
@@ -42,6 +69,8 @@ void main()
 
 	int nLastData = -100;
 	cout << (BSTCheck(oBSTree.pRoot, nLastData) ? "BST" : "Not BST") << endl;
+
+	cout << (MyCheckBST(oBSTree.pRoot) ? "BST" : "Not BST") << endl;
 }
 
 #endif

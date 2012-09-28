@@ -40,6 +40,36 @@ bool FindMatch(Node* pRoot1, Node* pRoot2)
 			 FindMatch(pRoot1->pRight, pRoot2) );
 }
 
+bool MatchTree(Node* pNode1, Node* pNode2)
+{
+	if (nullptr == pNode1 && nullptr == pNode2)
+		return true;
+	// else 를 쓰면 nullptr != pNode1 && nullptr != pNode2 인 경우도 잡기때문에 안됨
+
+	if (nullptr == pNode1 || nullptr == pNode2)
+		return false;
+
+	if (pNode1->data == pNode2->data)
+		return MatchTree(pNode1->pLeft, pNode2->pLeft) && MatchTree(pNode1->pRight, pNode2->pRight);
+	else
+		return false;
+}
+
+bool FindMatch2(Node* pSrc, Node* pDest)
+{
+	if (nullptr == pSrc)
+		return false;
+
+	if (pSrc->data == pDest->data)
+	{
+		bool result = MatchTree(pSrc, pDest);
+		if (result)
+			return true;
+	}
+
+	return ( FindMatch2(pSrc->pLeft, pDest) || FindMatch2(pSrc->pRight, pDest) );
+}
+
 void main()
 {
 	BSTree oBSTree;
@@ -59,7 +89,7 @@ void main()
 	oBSTree2.Insert(50);
 	oBSTree2.Insert(150);
 
-	cout << ( FindMatch(oBSTree.pRoot, oBSTree2.pRoot) ? "Include" : "Not Include" ) << endl;
+	cout << ( FindMatch2(oBSTree.pRoot, oBSTree2.pRoot) ? "Include" : "Not Include" ) << endl;
 	
 	BSTree oBSTree3;
 
@@ -67,7 +97,7 @@ void main()
 	oBSTree3.Insert(25);
 	oBSTree3.Insert(75);
 
-	cout << ( FindMatch(oBSTree.pRoot, oBSTree3.pRoot) ? "Include" : "Not Include" ) << endl;
+	cout << ( FindMatch2(oBSTree.pRoot, oBSTree3.pRoot) ? "Include" : "Not Include" ) << endl;
 }
 
 #endif

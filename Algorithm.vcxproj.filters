@@ -91,6 +91,21 @@
     <Filter Include="Source Files\Cracking\10_New">
       <UniqueIdentifier>{4919d641-fca6-4e0f-adfd-a0feae0a34aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cracking\11_New">
+      <UniqueIdentifier>{4bdc0f6d-447c-4896-be2d-c702395804db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\13_New">
+      <UniqueIdentifier>{0101bd5c-c5fa-4a46-9ad1-2d3de75838cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cracking\1_New">
+      <UniqueIdentifier>{3f9984e5-f01a-4868-8cab-006282e45a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MS Questions">
+      <UniqueIdentifier>{ba2ee9f7-ed8d-447f-8215-1d2d0ed199a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPearls">
+      <UniqueIdentifier>{c7238891-bf46-418f-a688-0b7204886225}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MergeSort.cpp">
@@ -348,6 +363,45 @@
     <ClCompile Include="10.4.new.cpp">
       <Filter>Source Files\Cracking\10_New</Filter>
     </ClCompile>
+    <ClCompile Include="11.1.new.cpp">
+      <Filter>Source Files\Cracking\11_New</Filter>
+    </ClCompile>
+    <ClCompile Include="11.2.new.cpp">
+      <Filter>Source Files\Cracking\11_New</Filter>
+    </ClCompile>
+    <ClCompile Include="11.3.new.cpp">
+      <Filter>Source Files\Cracking\11_New</Filter>
+    </ClCompile>
+    <ClCompile Include="11.5.new.cpp">
+      <Filter>Source Files\Cracking\11_New</Filter>
+    </ClCompile>
+    <ClCompile Include="11.6.new.cpp">
+      <Filter>Source Files\Cracking\11_New</Filter>
+    </ClCompile>
+    <ClCompile Include="13.7.new.cpp">
+      <Filter>Source Files\Cracking\13_New</Filter>
+    </ClCompile>
+    <ClCompile Include="13.8.new.cpp">
+      <Filter>Source Files\Cracking\13_New</Filter>
+    </ClCompile>
+    <ClCompile Include="1.6.new.cpp">
+      <Filter>Source Files\Cracking\1_New</Filter>
+    </ClCompile>
+    <ClCompile Include="2.1.new.cpp">
+      <Filter>Source Files\Cracking\2_New</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList3.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="ArraySerialize.cpp">
+      <Filter>Source Files\MS Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCircle.cpp">
+      <Filter>Source Files\MS Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\ProgrammingPearls</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -361,6 +415,9 @@
     </ClInclude>
     <ClInclude Include="Stack_LinkedList.h">
       <Filter>Source Files\Cracking\3_New</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList3.h">
+      <Filter>Source Files\LinkedList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

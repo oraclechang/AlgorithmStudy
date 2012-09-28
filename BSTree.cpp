@@ -1,4 +1,4 @@
-//#ifdef _BSTREE
+#ifdef _BSTREE
 
 #include "BSTree.h"
 
@@ -70,4 +70,4 @@ void BSTree::doTravelse(Node* pNode)
 }
 
 
-//#endif
+#endif

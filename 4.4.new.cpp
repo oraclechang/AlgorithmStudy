@@ -1,4 +1,4 @@
-#ifdef P_4_4_NEW
+#ifdef _4_4_NEW_
 
 /*
 Problem
@@ -35,6 +35,33 @@ auto CreateLevelLinkedList(Node* pHead) -> list< list< Node * > >
 	return vResultList;
 }
 
+vector< list< Node * > > LevelList(Node* pRoot)
+{
+	vector< list< Node * > > vResult;
+	list< Node * >* liCurr = new list< Node * >();
+	liCurr->push_back(pRoot);
+
+	list< Node *>* liParent = nullptr;
+	while (!liCurr->empty())
+	{
+		vResult.push_back(*liCurr);
+
+		liParent = liCurr;
+		liCurr = new list< Node * >();
+
+		for (auto item : *liParent)
+		{ 
+			if ( nullptr != item->pLeft )
+				liCurr->push_back(item->pLeft);
+			if ( nullptr != item->pRight )
+				liCurr->push_back(item->pRight);
+		}
+
+	}
+
+	return vResult;
+}
+
 void main()
 {
 	BSTree oBSTree;
@@ -48,15 +75,29 @@ void main()
 	oBSTree.Insert(5);
 
 	//oBSTree.BFS(oBSTree.pRoot);
-	auto Result = CreateLevelLinkedList(oBSTree.pRoot);
+	//auto Result = CreateLevelLinkedList(oBSTree.pRoot);
 
 	int i = 0;
+	/*
 	for (auto it = Result.begin(); it != Result.end(); ++it)
 	{
 		list< Node * > tmpList = *it;
 		cout << "Level " << i << " : ";
 		for (auto it2 = tmpList.begin(); it2 != tmpList.end(); ++it2)
 			cout << (*it2)->data << " ";
+
+		i++;
+		cout << endl;
+	}
+	*/
+
+	auto Result = LevelList(oBSTree.pRoot);
+	for (auto it : Result )
+	{
+		list< Node * > tmpList = it;
+		cout << "Level " << i << " : ";
+		for (auto it2 : tmpList)
+			cout << it2->data << " ";
 
 		i++;
 		cout << endl;

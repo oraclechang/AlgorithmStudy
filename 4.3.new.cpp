@@ -1,4 +1,4 @@
-#ifdef P_4_3_NEW
+#ifdef _4_3_NEW_
 
 /*
 Problem
@@ -10,6 +10,7 @@ Solution
 #include "Header.h"
 #include "BSTree.h"
 
+/*
 Node* BuildBSTFromArray(vector< int > vArr, Node** ppNode, int l, int u)
 {
 	if (l > u)
@@ -25,6 +26,19 @@ Node* BuildBSTFromArray(vector< int > vArr, Node** ppNode, int l, int u)
 
 	return *ppNode;
 }
+*/
+
+void BuildBST(vector< int >& vArr, Node** ppRoot, int l, int u)
+{
+	if (l > u)
+		return;
+
+	int m = (l + u) /2;
+
+	*ppRoot = new Node(vArr[m]);
+	BuildBST(vArr, &(*ppRoot)->pLeft, l, m - 1);
+	BuildBST(vArr, &(*ppRoot)->pRight, m + 1, u);
+}
 
 void main()
 {
@@ -37,7 +51,8 @@ void main()
 
 	BSTree oBSTree;
 
-	BuildBSTFromArray(vArr, &oBSTree.pRoot, 0, vArr.size() - 1);
+	//BuildBSTFromArray(vArr, &oBSTree.pRoot, 0, vArr.size() - 1);
+	BuildBST(vArr, &oBSTree.pRoot, 0, vArr.size() - 1);
 
 	oBSTree.Travelse();
 }

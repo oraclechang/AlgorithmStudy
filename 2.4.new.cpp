@@ -1,4 +1,4 @@
-#ifdef P_2_4_NEW
+#ifdef _2_4_NEW_
 
 /*
 Problem
@@ -9,6 +9,9 @@ Solution
 */
 
 #include "Header.h"
+#include "LinkedList3.h"
+
+/*
 #include "LinkedList_shared_ptr.h"
 
 template< typename T >
@@ -59,6 +62,61 @@ void main()
 	auto result = SplitNodes(pHead, 3);
 
 	TravelseNode(result);
+}
+
+*/
+
+Node* SplitNode(Node* pHead, const int x)
+{
+	if (nullptr == pHead || nullptr == pHead->pNext)
+		return nullptr;
+
+	Node* pFirst = nullptr;
+	Node* pSecond = nullptr;
+	Node* pNode = pHead;
+	while (nullptr != pNode)
+	{
+		Node* pNext = pNode->pNext;
+
+		if (x > pNode->data)
+		{
+			pNode->pNext = pFirst;
+			pFirst = pNode;
+		}
+		else if (x < pNode->data)
+		{
+			pNode->pNext = pSecond;
+			pSecond = pNode;
+		}
+
+		pNode = pNext;
+	}
+
+	pNode = pFirst;
+	while (nullptr != pNode->pNext)
+		pNode = pNode->pNext;
+
+	pNode->pNext = pSecond;
+
+	return pFirst;
+}
+
+void main()
+{
+	Node* pHead = nullptr;
+	Insert(&pHead, 1);
+	Insert(&pHead, 2);
+	Insert(&pHead, 3);
+	Insert(&pHead, 6);
+	Insert(&pHead, 7);
+
+	Node* result = SplitNode(pHead, 5);
+
+	while (nullptr != result)
+	{
+		cout << result->data << " ";
+		result = result->pNext;
+	}
 }
 
 #endif

@@ -11,3 +11,5 @@
 
 Algorithm.v11.suo
 Algorithm.vcxproj.user
+*.sbr
+*.bsc

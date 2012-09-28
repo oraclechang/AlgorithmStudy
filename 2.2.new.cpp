@@ -1,4 +1,4 @@
-#ifdef P_2_2_NEW
+#ifdef _2_2_NEW_
 
 /*
 Problem
@@ -9,6 +9,8 @@ Solution
 */
 
 #include "Header.h"
+#include "LinkedList3.h"
+/*
 #include "LinkedList_shared_ptr.h"
 
 template< typename T >
@@ -65,6 +67,36 @@ void main()
 
 	pResult = FindKthToLast_Iter(pTmp, 1);
 	cout << pResult->data << endl;
+}
+*/
+Node* FineKthNode(Node* pHead, int k)
+{
+	Node* pKthNode = nullptr;
+	int count = 0;
+
+	while (nullptr != pHead)
+	{
+		++count;
+		if (count == k)
+			pKthNode = pHead;
+		else if (count > k)
+			pKthNode = pKthNode->pNext;
+
+		pHead = pHead->pNext;
+	}
+
+	return pKthNode;
+}
+
+void main()
+{
+	Node* pHead = nullptr;
+
+	Insert(&pHead, 1);
+	Insert(&pHead, 2);
+
+	Node* pResult = FineKthNode(pHead, 2);
+	cout << pResult->data;
 }
 
 #endif

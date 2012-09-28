@@ -79,6 +79,8 @@ void LinkedList< T >::deleteDups()
 	}
 }
 
+// Bugs in this cod!!!!
+// Refer to 2.1.new.cpp for delete
 template< typename T >
 void LinkedList< T >::deleteDups2()
 {

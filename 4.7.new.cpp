@@ -37,6 +37,36 @@ Node* CommonAncestor(Node* pRoot, Node* pNode1, Node* pNode2)
 		return CommonAncestor(pRoot->pRight, pNode1, pNode2);
 }
 
+bool IsNodeExist(Node* pNode, Node* pTarget)
+{
+	if (nullptr == pNode)
+		return false;
+
+	if (pTarget == pNode)
+		return true;
+
+	return ( IsNodeExist(pNode->pLeft, pTarget) || IsNodeExist(pNode->pRight, pTarget) );
+}
+
+Node* CommonAncestor2(Node* pRoot, Node* pNodeA, Node* pNodeB)
+{
+	if (nullptr == pRoot)
+		return nullptr;
+
+	bool bAExistLeft = IsNodeExist(pRoot->pLeft, pNodeA);
+	bool bBExistLeft = IsNodeExist(pRoot->pLeft, pNodeB);
+
+	if (bAExistLeft != bBExistLeft)
+		return pRoot;
+	else
+	{
+		if (bAExistLeft)
+			return CommonAncestor2(pRoot->pLeft, pNodeA, pNodeB);
+		else
+			return CommonAncestor2(pRoot->pRight, pNodeA, pNodeB);
+	}
+}
+
 void main()
 {
 	BSTree oBSTree;
@@ -50,7 +80,8 @@ void main()
 	Node* pNode2 = oBSTree.Insert(175);
 	Node* pNode1 = oBSTree.Insert(110);
 
-	Node* pTmp = CommonAncestor(oBSTree.pRoot, pNode1, pNode2);
+	//Node* pTmp = CommonAncestor(oBSTree.pRoot, pNode1, pNode2);
+	Node* pTmp = CommonAncestor2(oBSTree.pRoot, pNode1, pNode2);
 
 	cout << pTmp->data << endl;
 
