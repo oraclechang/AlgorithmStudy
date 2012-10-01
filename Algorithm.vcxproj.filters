@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Array&amp;String">
-      <UniqueIdentifier>{6b2dc995-0458-4f05-9ef2-bde0f60f6446}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Sorting">
       <UniqueIdentifier>{8bb941a7-e45d-4113-aade-904013e16d67}</UniqueIdentifier>
     </Filter>
